@@ -1,0 +1,37 @@
+name = "indian-regulatory-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "20307250db72413daf7bf5d3cecf4414"
+
+[[kv_namespaces]]
+binding = "USAGE"
+id = "8764de5f422d4b079f6ad825e214e788"
+
+[vars]
+UPGRADE_URL = "https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/upgrade"
+SEBI_BASE = "https://www.sebi.gov.in"
+RBI_BASE = "https://rbi.org.in"
+MCA_BASE = "https://www.mca.gov.in"
+NSE_BASE = "https://www.nseindia.com"
+BSE_BASE = "https://www.bseindia.com"
+AMFI_BASE = "https://www.amfiindia.com"
+PRODUCT_NAME = "indian-regulatory-mcp"
+DODO_PRODUCT_ID_SOLO = "pdt_0NgkUDhUKbyy010ZP3wfU"
+DODO_PRODUCT_ID_TEAM = "pdt_0NgkUDolLoac7ZYeVAmei"
+DODO_PRODUCT_ID_PRO  = "pdt_0NgkUDrbOSHVHYUIDGXXG"
+FROM_EMAIL = "prakshatechnologies@gmail.com"
+DODO_BASE = "https://live.dodopayments.com"
+CUSTOMER_PORTAL_RETURN_URL = "https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/account"
+
+# Secrets:
+#   DODO_API_KEY
+#   DODO_WEBHOOK_SECRET
+#   RESEND_API_KEY          (optional)
+#   ADMIN_TOKEN

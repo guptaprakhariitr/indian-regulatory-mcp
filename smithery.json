@@ -1,0 +1,20 @@
+{
+  "$schema": "https://smithery.ai/schema/server.json",
+  "name": "indian-regulatory-mcp",
+  "displayName": "Indian Regulatory Data",
+  "description": "SEBI orders/circulars, RBI notifications, MCA company master, GSTIN/PAN validation, NSE/BSE announcements, AMFI NAV — unified for AI agents.",
+  "version": "0.2.0",
+  "license": "MIT",
+  "homepage": "https://indian-regulatory-mcp.workers.dev",
+  "categories": ["regulatory", "fintech", "india"],
+  "tags": ["sebi", "rbi", "mca", "gst", "nse", "bse", "amfi", "india", "fintech", "legaltech"],
+  "transport": { "type": "http", "url": "https://indian-regulatory-mcp.workers.dev/mcp" },
+  "auth": { "type": "bearer", "freeTier": { "monthlyCalls": 100, "ratePerMinute": 10 } },
+  "tools": ["sebi_orders", "sebi_circulars", "rbi_circulars", "rbi_press_release", "mca_company", "gst_verify", "nse_corp_announcements", "amfi_nav"],
+  "pricing": { "currency": "USD", "tiers": [
+    { "name": "Free", "price": 0,  "monthlyCalls": 100 },
+    { "name": "Solo", "price": 9,  "monthlyCalls": 2000 },
+    { "name": "Team", "price": 29, "monthlyCalls": 10000 },
+    { "name": "Pro",  "price": 79, "monthlyCalls": 50000 }
+  ] }
+}
