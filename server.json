@@ -18,14 +18,14 @@
       "name": "indian-regulatory-mcp",
       "version": "0.2.0",
       "runtime_hint": "http",
-      "remote_url": "https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/mcp",
+      "remote_url": "https://indian-regulatory-mcp.atlasword.workers.dev/mcp",
       "transport_type": "http"
     }
   ],
   "remotes": [
     {
       "transport_type": "http",
-      "url": "https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/mcp"
+      "url": "https://indian-regulatory-mcp.atlasword.workers.dev/mcp"
     }
   ],
   "categories": [

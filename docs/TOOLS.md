@@ -57,7 +57,7 @@ See `src/tools.ts` for the JSON Schema input.
 {
   "mcpServers": {
     "indian-regulatory-mcp": {
-      "url": "https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/mcp",
+      "url": "https://indian-regulatory-mcp.atlasword.workers.dev/mcp",
       "headers": { "Authorization": "Bearer YOUR_API_KEY" }
     }
   }

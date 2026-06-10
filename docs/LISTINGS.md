@@ -25,7 +25,7 @@ Auto-crawls GitHub by repo topic `mcp-server`. Already tagged. Indexes within 24
 - **Display name:** `Indian Regulatory Data`
 - **Description:** `SEBI orders/circulars, RBI notifications, MCA company master, GSTIN/PAN validation, NSE/BSE announcements, AMFI NAV.`
 - **GitHub URL:** `https://github.com/guptaprakhariitr/indian-regulatory-mcp`
-- **Endpoint URL:** `https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/mcp`
+- **Endpoint URL:** `https://indian-regulatory-mcp.atlasword.workers.dev/mcp`
 - **Tags:** sebi, rbi, mca, gst, nse, bse, amfi, india, fintech, legaltech
 - **License:** MIT
 - **Transport:** HTTP (remote)
@@ -50,7 +50,7 @@ Auto-crawls GitHub by repo topic `mcp-server`. Already tagged. Indexes within 24
 ### Twitter / X thread template
 > Just shipped indian-regulatory-mcp — Model Context Protocol server: sebi orders/circulars, rbi notifications, mca company master, gstin/pan validation, nse/bse announcements, amfi nav.
 >
-> Endpoint: https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/mcp
+> Endpoint: https://indian-regulatory-mcp.atlasword.workers.dev/mcp
 > GitHub: https://github.com/guptaprakhariitr/indian-regulatory-mcp
 >
 > Free tier available. Paid from $9/mo.

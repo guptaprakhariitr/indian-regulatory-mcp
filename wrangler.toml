@@ -15,7 +15,7 @@ binding = "USAGE"
 id = "8764de5f422d4b079f6ad825e214e788"
 
 [vars]
-UPGRADE_URL = "https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/upgrade"
+UPGRADE_URL = "https://indian-regulatory-mcp.atlasword.workers.dev/upgrade"
 SEBI_BASE = "https://www.sebi.gov.in"
 RBI_BASE = "https://rbi.org.in"
 MCA_BASE = "https://www.mca.gov.in"
@@ -24,13 +24,13 @@ BSE_BASE = "https://www.bseindia.com"
 AMFI_BASE = "https://www.amfiindia.com"
 PRODUCT_NAME = "indian-regulatory-mcp"
 PRODUCT_TAGLINE = "Indian regulatory data MCP: SEBI orders, RBI circulars, MCA company master, GSTIN/PAN verification."
-PRODUCT_URL = "https://indian-regulatory-mcp.prakhar-cognizance.workers.dev"
+PRODUCT_URL = "https://indian-regulatory-mcp.atlasword.workers.dev"
 DODO_PRODUCT_ID_SOLO = "pdt_0NgkUDhUKbyy010ZP3wfU"
 DODO_PRODUCT_ID_TEAM = "pdt_0NgkUDolLoac7ZYeVAmei"
 DODO_PRODUCT_ID_PRO  = "pdt_0NgkUDrbOSHVHYUIDGXXG"
 FROM_EMAIL = "prakshatechnologies@gmail.com"
 DODO_BASE = "https://live.dodopayments.com"
-CUSTOMER_PORTAL_RETURN_URL = "https://indian-regulatory-mcp.prakhar-cognizance.workers.dev/account"
+CUSTOMER_PORTAL_RETURN_URL = "https://indian-regulatory-mcp.atlasword.workers.dev/account"
 
 # Secrets:
 #   DODO_API_KEY
