@@ -1,0 +1,74 @@
+# Smithery registry config — https://smithery.ai/docs/build/project-config/smithery-yaml
+# This is an HTTP-transport MCP server; Smithery hosts the listing and proxies
+# clients straight to our Cloudflare Workers endpoint.
+
+name: indian-regulatory-mcp
+displayName: Indian Regulatory Data
+description: |
+  SEBI orders/circulars, RBI notifications, MCA company master, GSTIN/PAN validation, NSE/BSE announcements, AMFI NAV — unified for AI agents.
+homepage: https://indian-regulatory-mcp.atlasword.workers.dev
+repository: https://github.com/guptaprakhariitr/indian-regulatory-mcp
+license: MIT
+version: "0.2.0"
+
+runtime: container
+
+startCommand:
+  type: http
+  url: https://indian-regulatory-mcp.atlasword.workers.dev/mcp
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: API key (optional)
+        description: |
+          Bearer token from https://indian-regulatory-mcp.atlasword.workers.dev/upgrade.
+          Leave blank for the anonymous free tier (~100 calls/month/IP).
+    required: []
+  exampleConfig:
+    apiKey: ""
+  commandFunction: |-
+    (config) => ({
+      type: "http",
+      url: "https://indian-regulatory-mcp.atlasword.workers.dev/mcp",
+      headers: config.apiKey ? { Authorization: `Bearer ${config.apiKey}` } : {}
+    })
+
+remote:
+  type: http
+  url: https://indian-regulatory-mcp.atlasword.workers.dev/mcp
+
+categories:
+  - regulatory
+  - fintech
+  - india
+tags:
+  - sebi
+  - rbi
+  - mca
+  - gst
+  - nse
+  - bse
+  - amfi
+  - india
+  - fintech
+  - legaltech
+
+tools:
+  - name: sebi_orders
+  - name: sebi_circulars
+  - name: rbi_circulars
+  - name: rbi_press_release
+  - name: mca_company
+  - name: gst_verify
+  - name: nse_corp_announcements
+  - name: amfi_nav
+
+auth:
+  type: bearer
+  required: false
+  description: |
+    Optional. Anonymous free tier works for ~100 calls/month per IP. For higher
+    quotas, grab a key from https://indian-regulatory-mcp.atlasword.workers.dev/upgrade and pass
+    it as `Authorization: Bearer <key>`.

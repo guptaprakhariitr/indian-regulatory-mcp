@@ -208,3 +208,27 @@ MIT — see [LICENSE](LICENSE).
 - **Live status page:** [https://mcp-hub.atlasword.workers.dev/status](https://mcp-hub.atlasword.workers.dev/status)
 - **Machine-readable status:** [https://mcp-hub.atlasword.workers.dev/status.json](https://mcp-hub.atlasword.workers.dev/status.json)
 - **Source repo:** [https://github.com/guptaprakhariitr/indian-regulatory-mcp](https://github.com/guptaprakhariitr/indian-regulatory-mcp)
+
+
+## Install via npm (one-liner)
+
+A thin launcher is published as [`@atlasword/indian-regulatory-mcp`](https://www.npmjs.com/package/@atlasword/indian-regulatory-mcp) on npm. No manual URL to copy/paste:
+
+```bash
+npx -y @atlasword/indian-regulatory-mcp
+```
+
+Or wire it into your MCP client:
+
+```jsonc
+{
+  "mcpServers": {
+    "indian-regulatory": {
+      "command": "npx",
+      "args": ["-y", "@atlasword/indian-regulatory-mcp"]
+    }
+  }
+}
+```
+
+The npm package is just a launcher — it shells out to [`mcp-remote`](https://www.npmjs.com/package/mcp-remote) and points it at the hosted endpoint (`https://indian-regulatory-mcp.atlasword.workers.dev/mcp`).
