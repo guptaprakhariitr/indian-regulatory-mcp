@@ -3,7 +3,7 @@
   "name": "io.github.guptaprakhariitr/indian-regulatory-mcp",
   "title": "Indian Regulatory Data",
   "description": "SEBI orders, RBI notifications, MCA filings, NSE/BSE announcements, AMFI NAV.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "websiteUrl": "https://indian-regulatory-mcp.atlasword.workers.dev/",
   "repository": {
     "url": "https://github.com/guptaprakhariitr/indian-regulatory-mcp",
@@ -13,16 +13,6 @@
     {
       "type": "streamable-http",
       "url": "https://indian-regulatory-mcp.atlasword.workers.dev/mcp"
-    }
-  ],
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "@insnapsprakhar/indian-regulatory-mcp",
-      "version": "0.2.0",
-      "transport": {
-        "type": "stdio"
-      }
     }
   ]
 }
