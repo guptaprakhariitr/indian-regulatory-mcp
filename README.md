@@ -212,10 +212,10 @@ MIT — see [LICENSE](LICENSE).
 
 ## Install via npm (one-liner)
 
-A thin launcher is published as [`@atlasword/indian-regulatory-mcp`](https://www.npmjs.com/package/@atlasword/indian-regulatory-mcp) on npm. No manual URL to copy/paste:
+A thin launcher is published as [`@insnapsprakhar/indian-regulatory-mcp`](https://www.npmjs.com/package/@insnapsprakhar/indian-regulatory-mcp) on npm. No manual URL to copy/paste:
 
 ```bash
-npx -y @atlasword/indian-regulatory-mcp
+npx -y @insnapsprakhar/indian-regulatory-mcp
 ```
 
 Or wire it into your MCP client:
@@ -225,7 +225,7 @@ Or wire it into your MCP client:
   "mcpServers": {
     "indian-regulatory": {
       "command": "npx",
-      "args": ["-y", "@atlasword/indian-regulatory-mcp"]
+      "args": ["-y", "@insnapsprakhar/indian-regulatory-mcp"]
     }
   }
 }
